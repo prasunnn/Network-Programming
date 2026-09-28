@@ -1,9 +1,10 @@
-//URLEncoder
+//URLEncoderDecoder
 
 package network.programming;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.net.URLDecoder;
 
 public class URLEncoderExample {
     public static void main(String[] args) {
@@ -11,7 +12,10 @@ public class URLEncoderExample {
             System.out.println(URLEncoder.encode("This string has spaces", "UTF-8"));
             System.out.println(URLEncoder.encode("This*string*has*asterisks", "UTF-8"));
             System.out.println(URLEncoder.encode("This%string%has%percent%signs", "UTF-8"));
-            System.out.println(URLEncoder.encode("This+string+has+pluses", "UTF-8"));
+            String enc = URLEncoder.encode("This+string+has+pluses", "UTF-8");
+            System.out.println(enc);
+            System.out.println("Decoded Value:");
+            System.out.println(URLDecoder.decode(enc, "UTF-8"));
             System.out.println(URLEncoder.encode("This/string/has/slashes", "UTF-8"));
             System.out.println(URLEncoder.encode("This\"string\"has\"quote\"marks", "UTF-8"));
             System.out.println(URLEncoder.encode("This:string:has:colons", "UTF-8"));
