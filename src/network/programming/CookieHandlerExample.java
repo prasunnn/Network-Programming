@@ -7,10 +7,7 @@ import java.net.HttpCookie;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.List;
-/**
- *
- * @author basantachapagain
- */
+
 public class CookieHandlerExample {
     public static void main(String args[]) throws Exception
     {
